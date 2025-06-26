@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+message Composition {
+  repeated int32 champions = 1;      // Champion IDs
+  repeated int32 synergies = 2;      // Trait counts by index
+}
+
+message CompositionList {
+  repeated Composition compositions = 1;
+}
